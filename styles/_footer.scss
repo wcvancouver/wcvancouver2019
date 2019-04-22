@@ -6,7 +6,6 @@
         padding: 2em 1.5em 1.5em;
     }
 }
-
 .widget-column {
     float: none !important;
     width: 100% !important;
@@ -27,24 +26,26 @@
     border-top: 1px solid rgba($color-dark, .5);
     float: none;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 10px;
     position:relative;
     a{
         position: relative;
+        text-transform: uppercase;
+        font-size: .5rem;
     }
     &::before{
         z-index: 2;
         display: block;
         position: absolute;
         background: #fff;
-        font-size: 40px;
+        font-size: 18px;
         line-height:50px;
         content: "\f120";
         font-family: dashicons;
         text-indent: 0;
         text-align: center;
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
         top: -25px;
         left: 50%;
