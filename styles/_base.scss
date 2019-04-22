@@ -52,3 +52,30 @@ body {
         padding-left: 2em;
     }
 }
+
+// simplified grid
+.row {
+    display: flex;
+    @media screen and (max-width: 48em) {
+        display: block;
+    }
+    .col {
+        width: 50%;
+        &:first-child {
+            padding-right: 16px;
+            @media screen and (max-width: 48em) {
+                padding-right: 0;
+                padding-bottom: 16px;
+            }
+        }
+        &:last-child {
+            padding-left: 16px;
+            @media screen and (max-width: 48em) {
+                padding-left: 0;
+            }
+        }
+        @media screen and (max-width: 48em) {
+            width: 100%;
+        }
+    }
+}
