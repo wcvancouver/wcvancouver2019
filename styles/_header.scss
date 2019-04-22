@@ -41,18 +41,20 @@ html {
     margin: 0 !important;
     .site-title {
       a {
-        font-size: 3rem;
+        font-size: 2.45rem;
         @media screen and (max-width: 48em) {
           display: block;
           padding-top: 16px;
           font-size: 2rem;
+          text-align: center;
         }
       }
     }
     .site-description {
       font-size: 1.5rem;
       @media screen and (max-width: 48em) {
-        font-size: 1rem;
+        text-align: center;
+        font-size: 1.25rem;
       }
     }
   }
