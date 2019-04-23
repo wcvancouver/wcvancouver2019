@@ -1,5 +1,11 @@
 @import "utilities";
 
+@media screen and (min-width: 48em) {
+    .admin-bar .site-navigation-fixed.navigation-top {
+        top: 0;
+    }
+}
+
 .site-header {
     .navigation-top {
         width: 100%;
