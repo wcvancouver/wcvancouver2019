@@ -1,3 +1,5 @@
+@import "utilities";
+
 .page-two-column {
   .panel-content {
     .entry-header {
@@ -21,6 +23,79 @@
     }
     .entry-content {
       float: none !important;
+      width: 100% !important;
+    }
+  }
+}
+
+
+#panel1 {
+  width: 100%;
+  background-color: $color-dark;
+  padding: 4em 2em 4em;
+  background-image: url("https://wcvancouver.github.io/wcvancouver2019/images/canvas_texture_dark.jpg");
+  height: auto;
+  margin-bottom: 250px;
+  overflow: visible;
+  @media screen and (min-width: 48em) {
+    height: 550px;
+  }
+  .panel-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: $color-white;
+    box-shadow: 1px 0px 16px -4px rgba(0,0,0,0.75);
+    header {
+      border-bottom: none;
+      h2 {
+        color: #EFEFEF;
+        padding: 1em 16px 0;
+      }
+    }
+    .entry-content {
+      ul {
+        &.wp-block-latest-posts {
+          display: flex;
+          flex-wrap: wrap;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          li {
+            flex-basis: 0;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            max-width: 100%;
+            min-width: 100%;
+            position: relative;
+            width: 100%;
+            padding: 16px;
+            @media screen and (min-width: 48em) {
+              min-width: 30%;
+            }
+            a {
+              display: inline-block;
+              width: 100%;
+              border-top: solid 1px $color-darker;
+              padding: 16px;
+              font-size: 1rem;
+              font-weight: bold;
+              box-shadow: none;
+              color: $color-darker;
+            }
+            time {
+              padding: 0 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#panel2 {
+  .googlemaps {
+    width: 100%;
+    iframe {
       width: 100% !important;
     }
   }
