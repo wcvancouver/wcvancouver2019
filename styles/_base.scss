@@ -59,7 +59,6 @@ body {
     .col {
         min-width: 100%;
         flex-basis: 0;
-        -ms-flex-positive: 1;
         flex-grow: 1;
         @media screen and (min-width: 48em) {
             min-width: 50%;
