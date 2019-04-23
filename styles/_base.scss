@@ -55,25 +55,26 @@ body {
 // simplified grid
 .row {
     display: flex;
-    @media screen and (max-width: 48em) {
-        display: block;
-    }
+    flex-wrap: wrap;
     .col {
-        width: 50%;
+        min-width: 100%;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        @media screen and (min-width: 48em) {
+            min-width: 50%;
+        }
         &:first-child {
-            padding-right: 16px;
-            @media screen and (max-width: 48em) {
-                padding-right: 0;
+            padding-right: 0;
+            @media screen and (min-width: 48em) {
+                padding-right: 16px;
             }
         }
         &:last-child {
-            padding-left: 16px;
-            @media screen and (max-width: 48em) {
-                padding-left: 0;
+            padding-left: 0;
+            @media screen and (min-width: 48em) {
+                padding-leftt: 16px;
             }
-        }
-        @media screen and (max-width: 48em) {
-            width: 100%;
         }
     }
 }
