@@ -51,50 +51,97 @@
     margin: 0 auto;
     background-color: $color-white;
     box-shadow: 1px 0px 16px -4px rgba(0,0,0,0.75);
-    header {
+    > header {
       border-bottom: none;
       h2 {
         color: #EFEFEF;
         padding: 1em 16px 0;
       }
     }
-    .entry-content {
-      ul {
-        &.wp-block-latest-posts {
-          display: flex;
-          flex-wrap: wrap;
-          list-style: none;
-          padding: 0;
+    .recent-posts {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      > article {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        min-width: 100%;
+        position: relative;
+        width: 100%;
+        padding: 16px;
+        @media screen and (min-width: 48em) {
+          min-width: 30%;
+        }
+        > header {
+          border-top: solid 1px $color-darker;
           margin: 0;
-          li {
-            flex-basis: 0;
-            -ms-flex-positive: 1;
-            flex-grow: 1;
-            max-width: 100%;
-            min-width: 100%;
-            position: relative;
-            width: 100%;
-            padding: 16px;
-            @media screen and (min-width: 48em) {
-              min-width: 30%;
-            }
+          padding: 0;
+          .entry-title {
+            line-height: normal;
             a {
               display: inline-block;
               width: 100%;
-              border-top: solid 1px $color-darker;
-              padding: 16px;
+              padding-bottom: 16px;
               font-size: 1rem;
               font-weight: bold;
               box-shadow: none;
               color: $color-darker;
+              margin-left: 0;
             }
-            time {
-              padding: 0 16px;
-            }
+          }
+          time {
+            padding: 0;
+            font-weight: normal;
+            letter-spacing: normal;
           }
         }
       }
     }
+  }
+  .panel-content {
+
+
+    //.entry-content {
+    //  ul {
+    //    &.wp-block-latest-posts {
+    //      display: flex;
+    //      flex-wrap: wrap;
+    //      list-style: none;
+    //      padding: 0;
+    //      margin: 0;
+    //      li {
+    //        flex-basis: 0;
+    //        -ms-flex-positive: 1;
+    //        flex-grow: 1;
+    //        max-width: 100%;
+    //        min-width: 100%;
+    //        position: relative;
+    //        width: 100%;
+    //        padding: 16px;
+    //        @media screen and (min-width: 48em) {
+    //          min-width: 30%;
+    //        }
+    //        a {
+    //          display: inline-block;
+    //          width: 100%;
+    //          border-top: solid 1px $color-darker;
+    //          padding: 16px;
+    //          font-size: 1rem;
+    //          font-weight: bold;
+    //          box-shadow: none;
+    //          color: $color-darker;
+    //        }
+    //        time {
+    //          padding: 0 16px;
+    //        }
+    //      }
+    //    }
+    //  }
+    //}
   }
 }
 
