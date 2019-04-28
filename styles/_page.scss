@@ -73,19 +73,39 @@ body:not(.home) {
     .custom-header {
         display: none;
     }
+
     .site-content {
         .wrap {
             @media screen and (min-width: 48em) {
-                max-width: 740px;
+                //max-width: 740px;
+
+            }
+            .entry-header {
+                float: none !important;
+                width: 100% !important;
+                margin: 0 !important;
+                padding: 0 0 26px 0 !important;
+                min-height: auto !important;
+                flex-flow: row;
+                justify-content: start;
+                .entry-title {
+                    text-align: left;
+                    &:before, &:after {
+                        content: none !important;
+                        display: none !important;
+                    }
+                }
+            }
+            .entry-content {
+                float: none !important;
+                width: 100% !important;
+                margin: 0 !important;
+                &:before, &:after {
+                    content: none;
+                    display: none;
+                }
             }
         }
-    }
-}
-
-.blog,
-.single-post,
-.single-wcb_sponsor {
-    .entry-title {
     }
 }
 
