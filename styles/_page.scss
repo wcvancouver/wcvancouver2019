@@ -118,3 +118,7 @@ body:not(.home) {
 .site-content-contain {
     background-color: $color-white;
 }
+
+.tix-column-remaining {
+    white-space: nowrap !important;
+}
