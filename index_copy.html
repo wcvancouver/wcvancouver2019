@@ -40,7 +40,28 @@
     </style>
 
     <link rel='stylesheet' id='dashicons-css'  href='https://2019.vancouver.wordcamp.org/wp-includes/css/dashicons.min.css?ver=5.1.1' type='text/css' media='all' />
+    <link rel='stylesheet' id='admin-bar-css'  href='https://2019.vancouver.wordcamp.org/wp-includes/css/admin-bar.min.css?ver=5.1.1' type='text/css' media='all' />
+    <style id='admin-bar-inline-css' type='text/css'>
 
+        .admin-bar {
+            position: inherit !important;
+            top: auto !important;
+        }
+        .admin-bar .goog-te-banner-frame {
+            top: 32px !important
+        }
+        @media screen and (max-width: 782px) {
+            .admin-bar .goog-te-banner-frame {
+                top: 46px !important;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .admin-bar .goog-te-banner-frame {
+                position: absolute;
+            }
+        }
+
+    </style>
     <link rel='stylesheet' id='wp-block-library-css'  href='https://2019.vancouver.wordcamp.org/wp-includes/css/dist/block-library/style.min.css?ver=5.1.1' type='text/css' media='all' />
     <link rel='stylesheet' id='wp-block-library-theme-css'  href='https://2019.vancouver.wordcamp.org/wp-includes/css/dist/block-library/theme.min.css?ver=5.1.1' type='text/css' media='all' />
     <link rel='stylesheet' id='font-awesome-css'  href='https://2019.vancouver.wordcamp.org/wp-content/plugins/tagregator/includes/font-awesome/css/font-awesome.min.css?ver=3.2.1' type='text/css' media='all' />
@@ -68,6 +89,14 @@
     <link rel="alternate" type="text/xml+oembed" href="https://2019.vancouver.wordcamp.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2F2019.vancouver.wordcamp.org%2F&#038;format=xml" />
     <link rel='https://github.com/WP-API/WP-API' href='https://2019.vancouver.wordcamp.org/wp-json' />
 
+    <style type="text/css">
+        #wpadminbar .wc-coming-soon-info .ab-item,
+        #wpadminbar .wc-coming-soon-info .ab-item a {
+            background: #FFE399;
+            color: #23282d;
+        }
+    </style>
+
 
     <link rel='dns-prefetch' href='//v0.wordpress.com'/>
 
@@ -84,6 +113,7 @@
         }
     </style>
 
+    <style type="text/css" media="print">#wpadminbar { display:none; }</style>
     <style type="text/css" media="screen">
         html { margin-top: 32px !important; }
         * html body { margin-top: 32px !important; }
@@ -92,12 +122,11 @@
             * html body { margin-top: 46px !important; }
         }
     </style>
-    <link rel="stylesheet" type="text/css" id="wp-custom-css" href="https://2019.vancouver.wordcamp.org/?custom-css=3ecc010d3e" />
 
     <link rel="stylesheet" type="text/css" href="dist/style.css" />
 </head>
 
-<body class="home page-template-default page page-id-194 logged-in no-customize-support wp-embed-responsive page-slug-home twentyseventeen-front-page has-header-image page-two-column colors-light">
+<body class="home page-template-default page page-id-194 logged-in admin-bar no-customize-support wp-embed-responsive page-slug-home twentyseventeen-front-page has-header-image page-two-column colors-light">
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
@@ -232,45 +261,6 @@
                                     </article><!-- #post-## -->
 
                                     <article id="post-3" class="post-3 post type-post status-publish format-standard hentry category-uncategorized">
-
-                                        <header class="entry-header">
-                                            <div class="entry-meta">
-                                                <span class="screen-reader-text">Posted on</span> <a href="https://2019.vancouver.wordcamp.org/2019/01/04/welcome-to-wordcamp-vancouver-bc-canada/" rel="bookmark"><time class="entry-date published" datetime="2019-01-04T21:38:16-07:00">January 4, 2019</time><time class="updated" datetime="2019-04-24T00:27:11-07:00">April 24, 2019</time></a><span class="edit-link"><a class="post-edit-link" href="https://2019.vancouver.wordcamp.org/wp-admin/post.php?post=3&#038;action=edit">Edit<span class="screen-reader-text"> "Welcome to WordCamp Vancouver, BC, Canada"</span></a></span>			</div><!-- .entry-meta -->
-
-                                            <h3 class="entry-title"><a href="https://2019.vancouver.wordcamp.org/2019/01/04/welcome-to-wordcamp-vancouver-bc-canada/" rel="bookmark">Welcome to WordCamp Vancouver, BC, Canada</a></h3>	</header><!-- .entry-header -->
-
-                                        <div class="entry-summary">
-                                            <p>We&#8217;re happy to announce that WordCamp Vancouver 2019 is officially on the calendar! WordCamp Vancouver will be September 28, 2019 at UBC Robson Square in downtown Vancouver. Subscribe at the bottom of the page to stay up to date on the most recent news. We’ll be keeping you posted on all the details over the &hellip; </p>
-                                            <p class="link-more"><a href="https://2019.vancouver.wordcamp.org/2019/01/04/welcome-to-wordcamp-vancouver-bc-canada/" class="more-link">Continue reading<span class="screen-reader-text"> &#8220;Welcome to WordCamp Vancouver, BC, Canada&#8221;</span></a></p>
-                                        </div><!-- .entry-summary -->
-
-                                    </article><!-- #post-## --><article id="post-3" class="post-3 post type-post status-publish format-standard hentry category-uncategorized">
-
-                                        <header class="entry-header">
-                                            <div class="entry-meta">
-                                                <span class="screen-reader-text">Posted on</span> <a href="https://2019.vancouver.wordcamp.org/2019/01/04/welcome-to-wordcamp-vancouver-bc-canada/" rel="bookmark"><time class="entry-date published" datetime="2019-01-04T21:38:16-07:00">January 4, 2019</time><time class="updated" datetime="2019-04-24T00:27:11-07:00">April 24, 2019</time></a><span class="edit-link"><a class="post-edit-link" href="https://2019.vancouver.wordcamp.org/wp-admin/post.php?post=3&#038;action=edit">Edit<span class="screen-reader-text"> "Welcome to WordCamp Vancouver, BC, Canada"</span></a></span>			</div><!-- .entry-meta -->
-
-                                            <h3 class="entry-title"><a href="https://2019.vancouver.wordcamp.org/2019/01/04/welcome-to-wordcamp-vancouver-bc-canada/" rel="bookmark">Welcome to WordCamp Vancouver, BC, Canada</a></h3>	</header><!-- .entry-header -->
-
-                                        <div class="entry-summary">
-                                            <p>We&#8217;re happy to announce that WordCamp Vancouver 2019 is officially on the calendar! WordCamp Vancouver will be September 28, 2019 at UBC Robson Square in downtown Vancouver. Subscribe at the bottom of the page to stay up to date on the most recent news. We’ll be keeping you posted on all the details over the &hellip; </p>
-                                            <p class="link-more"><a href="https://2019.vancouver.wordcamp.org/2019/01/04/welcome-to-wordcamp-vancouver-bc-canada/" class="more-link">Continue reading<span class="screen-reader-text"> &#8220;Welcome to WordCamp Vancouver, BC, Canada&#8221;</span></a></p>
-                                        </div><!-- .entry-summary -->
-
-                                    </article><!-- #post-## --><article id="post-3" class="post-3 post type-post status-publish format-standard hentry category-uncategorized">
-
-                                        <header class="entry-header">
-                                            <div class="entry-meta">
-                                                <span class="screen-reader-text">Posted on</span> <a href="https://2019.vancouver.wordcamp.org/2019/01/04/welcome-to-wordcamp-vancouver-bc-canada/" rel="bookmark"><time class="entry-date published" datetime="2019-01-04T21:38:16-07:00">January 4, 2019</time><time class="updated" datetime="2019-04-24T00:27:11-07:00">April 24, 2019</time></a><span class="edit-link"><a class="post-edit-link" href="https://2019.vancouver.wordcamp.org/wp-admin/post.php?post=3&#038;action=edit">Edit<span class="screen-reader-text"> "Welcome to WordCamp Vancouver, BC, Canada"</span></a></span>			</div><!-- .entry-meta -->
-
-                                            <h3 class="entry-title"><a href="https://2019.vancouver.wordcamp.org/2019/01/04/welcome-to-wordcamp-vancouver-bc-canada/" rel="bookmark">Welcome to WordCamp Vancouver, BC, Canada</a></h3>	</header><!-- .entry-header -->
-
-                                        <div class="entry-summary">
-                                            <p>We&#8217;re happy to announce that WordCamp Vancouver 2019 is officially on the calendar! WordCamp Vancouver will be September 28, 2019 at UBC Robson Square in downtown Vancouver. Subscribe at the bottom of the page to stay up to date on the most recent news. We’ll be keeping you posted on all the details over the &hellip; </p>
-                                            <p class="link-more"><a href="https://2019.vancouver.wordcamp.org/2019/01/04/welcome-to-wordcamp-vancouver-bc-canada/" class="more-link">Continue reading<span class="screen-reader-text"> &#8220;Welcome to WordCamp Vancouver, BC, Canada&#8221;</span></a></p>
-                                        </div><!-- .entry-summary -->
-
-                                    </article><!-- #post-## --><article id="post-3" class="post-3 post type-post status-publish format-standard hentry category-uncategorized">
 
                                         <header class="entry-header">
                                             <div class="entry-meta">
@@ -599,7 +589,7 @@
     <a href="https://wordpress.org/about/privacy/cookies/" >
         Cookie Policy	</a>
 </div>
-</div>
+</div><script type='text/javascript' src='https://2019.vancouver.wordcamp.org/wp-includes/js/admin-bar.min.js?ver=5.1.1'></script>
 <script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201917'></script>
 <script type='text/javascript' src='https://2019.vancouver.wordcamp.org/wp-content/plugins/tagregator/javascript/front-end.js?ver=1'></script>
 <script type='text/javascript'>
@@ -797,5 +787,5 @@
 </body>
 </html>
 
-<!-- Dynamic page generated in 0.169 seconds. -->
+<!-- Dynamic page generated in 0.173 seconds. -->
 <!-- Page not cached by WP Super Cache. Check your settings page. Not caching requests by known users. (See Advanced Settings page) -->

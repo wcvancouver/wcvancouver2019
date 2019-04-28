@@ -51,8 +51,11 @@
     margin: 0 auto;
     background-color: $color-white;
     box-shadow: 1px 0px 16px -4px rgba(0,0,0,0.75);
-    > header {
+    header {
       border-bottom: none;
+      &.entry-header {
+        border-bottom: none !important;
+      }
       h2 {
         color: #EFEFEF;
         padding: 1em 16px 0;
@@ -186,22 +189,29 @@
 }
 
 #panel3 {
-  h4 {
-    color: $color-muted;
-    font-weight: normal;
-  }
-  .sponsor-row {
+  div[class^="wcorg-sponsor-level-"] {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    .sponsor-col {
+    position: relative;
+    padding-top: 35px;
+    h4, h2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: $color-muted;
+      font-weight: normal;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+    .wcorg-sponsor {
       padding: 16px;
       flex-basis: 0;
       flex-grow: 1;
       min-width: 190px;
       max-width: 190px;
-      .sponsor-logo-wrap {
+      .wcorg-sponsor-description {
         display: block;
         text-align: center;
         width: 100%;

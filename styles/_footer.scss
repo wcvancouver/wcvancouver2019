@@ -2,8 +2,15 @@
 
 .site-footer {
     border: none;
+    height: 350px;
+    padding: 4rem;
+    background-image: url("https://2019.vancouver.wordcamp.org/files/2019/04/cover_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     .wrap {
         padding: 2em 1.5em 1.5em;
+        background-color: $color-white;
     }
 }
 .widget-column {
