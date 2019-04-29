@@ -64,7 +64,12 @@ body:not(.home) {
         flex-flow: row;
         justify-content: start;
         .page-title {
-            @include headerTitleStyle();
+            border-bottom: solid 1px #000;
+            width: 100%;
+            padding-bottom: 20px;
+            font-size: 2rem !important;
+            letter-spacing: normal;
+            text-transform: none;
             &:before, &:after {
                 content: none !important;
                 display: none !important;
@@ -100,6 +105,12 @@ body:not(.home) {
                 flex-flow: row;
                 justify-content: start;
                 .entry-title {
+                    border-bottom: solid 1px #000;
+                    width: 100%;
+                    padding-bottom: 20px;
+                    font-size: 2rem !important;
+                    letter-spacing: normal;
+                    text-transform: none;
                     text-align: left;
                     &:before, &:after {
                         content: none !important;
@@ -132,4 +143,40 @@ body:not(.home) {
 
 .tix-column-remaining {
     white-space: nowrap !important;
+}
+
+/* Code of Conduct Page */
+body.page-id-19 .post-19 .entry-content ol ol,
+body.page-id-19 .post-19 .entry-content ol ul,
+body.page-id-19 .post-19 .entry-content ul ol,
+body.page-id-19 .post-19 .entry-content ul ul {
+    margin: 0 0 1em;
+}
+
+
+/* Organizers Page */
+.wcorg-organizer {
+    text-align: center;
+    width: 13.75rem;
+    margin: 1.5em 0;
+}
+.wcorg-organizers {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+
+/* Sponsors Page */
+.page-id-10 .wcorg-sponsors {
+    margin: 4em 0 0;
+}
+.page-id-10 .wcorg-sponsor {
+    margin: 0 auto 4em;
+}
+.page-id-10 .wcorg-sponsors h2 {
+    font-weight: bold;
 }
