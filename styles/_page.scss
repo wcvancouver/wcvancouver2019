@@ -56,8 +56,19 @@ body:not(.home) {
 
     .page-header {
         @include headerStyle();
+        float: none !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 0 26px 0 !important;
+        min-height: auto !important;
+        flex-flow: row;
+        justify-content: start;
         .page-title {
             @include headerTitleStyle();
+            &:before, &:after {
+                content: none !important;
+                display: none !important;
+            }
         }
     }
 
