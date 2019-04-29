@@ -104,17 +104,19 @@ body:not(.home) {
                 min-height: auto !important;
                 flex-flow: row;
                 justify-content: start;
-                .entry-title {
-                    border-bottom: solid 1px #000;
-                    width: 100%;
-                    padding-bottom: 20px;
-                    font-size: 2rem !important;
-                    letter-spacing: normal;
-                    text-transform: none;
-                    text-align: left;
-                    &:before, &:after {
-                        content: none !important;
-                        display: none !important;
+                h1 {
+                    &.entry-title {
+                        border-bottom: solid 1px #000;
+                        width: 100%;
+                        padding-bottom: 20px;
+                        font-size: 2rem !important;
+                        letter-spacing: normal;
+                        text-transform: none;
+                        text-align: left;
+                        &:before, &:after {
+                            content: none !important;
+                            display: none !important;
+                        }
                     }
                 }
             }
@@ -180,3 +182,13 @@ body.page-id-19 .post-19 .entry-content ul ul {
 .page-id-10 .wcorg-sponsors h2 {
     font-weight: bold;
 }
+
+
+// Fix mobile nav overlapping
+body:not(.home) {
+    padding-top: 50px;
+    &.admin-bar {
+        padding-top: 90px;
+    }
+}
+

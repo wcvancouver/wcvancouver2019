@@ -54,6 +54,9 @@
   @media screen and (min-width: 48em) {
     height: 550px;
   }
+  @media screen and (max-width: 48em) {
+    margin-bottom: 50px;
+  }
   .panel-content {
     max-width: 1000px;
     min-height: 550px;
